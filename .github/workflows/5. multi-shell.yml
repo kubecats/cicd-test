@@ -1,0 +1,24 @@
+name: Multi Shell Practice
+on: [push]
+
+jobs:
+  bash:
+    runs-on: windows-latest
+    steps:
+      - name: bash
+        shell: bash
+        run:
+          uname -a
+      - name: pwsh
+        shell: pwsh
+        run:
+          Get-ComputerInfo
+      - name: Python Shell 
+        shell: python
+        run: |
+          import sys 
+          print(sys.version)
+      - name: Node Shell
+        shell: node.js
+        run: |
+          console.log(process.version)
