@@ -18,7 +18,7 @@ jobs:
         run: |
           import sys 
           print(sys.version)
-      - name: Node Shell
-        shell: node.js
-        run: |
-          console.log(process.version)
+      # - name: Node Shell
+      #   shell: node.js
+      #   run:
+      #     console.log(process.version)
