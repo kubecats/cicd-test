@@ -1,15 +1,11 @@
-name: first-workflow22
-on: 
-  push:
-    branches:
-      - mac-main  # Ensure it triggers only on pushes to 'main' branch
+name: first-exercise-workflow
+on: [push, pull_request]
+
 jobs:
-  shell-cmd-job:
+  check-python:
     runs-on: ubuntu-latest
     steps:
-      - name: echo Hello
-        run: echo "Hello World"
-      - name: multiple line cmd
-        run: |
-          node -v
-          npm -v
+      - name: 1. check python version
+        run: python --version
+      - name: 2. check pip version
+        run: pip --version
