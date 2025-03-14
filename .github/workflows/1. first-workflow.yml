@@ -1,6 +1,8 @@
-name: first-workflow2
-on: [push]
-
+name: first-workflow
+on: 
+  push:
+    branches:
+      - mac-main  # Ensure it triggers only on pushes to 'main' branch
 jobs:
   shell-cmd-job:
     runs-on: ubuntu-latest
