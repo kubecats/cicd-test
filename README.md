@@ -6,4 +6,5 @@ Terraform은 Root Module과 Child Module(다른 구성에 의해 호출되는 �
 
 다양한 source 유형에서의 설치를 지원한다. : Local Paths, Terraform Registry, Github, Bitbucket, S3 bucket 등 https://developer.hashicorp.com/terraform/language/modules/sources
 
+```bash
 `kubectl get pods` 
